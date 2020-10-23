@@ -36,35 +36,16 @@ public class Lexer {
 
     private final Map<String, TokenType> SYMBOL_MAP = new LinkedHashMap<>();
     {
-//        SYMBOL_MAP.put("while", TokenType.WHILE);
-//        SYMBOL_MAP.put("done", TokenType.DONE);
-//        SYMBOL_MAP.put("++", TokenType.INCR);
-//        SYMBOL_MAP.put("--", TokenType.DECR);
-//        SYMBOL_MAP.put(">=", TokenType.MORE_OR_EQUAL);
-//        SYMBOL_MAP.put("<=", TokenType.LESS_OR_EQUAL);
-//        SYMBOL_MAP.put("!=", TokenType.NOT_EQUAl);
-        SYMBOL_MAP.put("==", TokenType.EQUAL);
-//        SYMBOL_MAP.put(">", TokenType.MORE);
-//        SYMBOL_MAP.put("<", TokenType.LESS);
-
-//        SYMBOL_MAP.put("T", TokenType.TRUE);
-//        SYMBOL_MAP.put("F", TokenType.FALSE);
-        SYMBOL_MAP.put("OR", TokenType.OR);
-        SYMBOL_MAP.put("XOR", TokenType.XOR);
-        SYMBOL_MAP.put("AND", TokenType.AND);
-        SYMBOL_MAP.put("NOT", TokenType.NOT);
-
-
-//        SYMBOL_MAP.put("+", TokenType.ADD);
-//        SYMBOL_MAP.put("-", TokenType.SUB);
-//        SYMBOL_MAP.put("*", TokenType.MUL);
-//        SYMBOL_MAP.put("/", TokenType.DIV);
-//        SYMBOL_MAP.put(";", TokenType.SEMICOLON);
-//        SYMBOL_MAP.put("!", TokenType.EXCLAM);
+        SYMBOL_MAP.put("I", TokenType.NUMBER);
+        SYMBOL_MAP.put("V", TokenType.NUMBER);
+        SYMBOL_MAP.put("X", TokenType.NUMBER);
+        SYMBOL_MAP.put("+", TokenType.ADD);
+        SYMBOL_MAP.put("-", TokenType.SUB);
+        SYMBOL_MAP.put("*", TokenType.MUL);
+        SYMBOL_MAP.put("/", TokenType.DIV);
+        SYMBOL_MAP.put(";", TokenType.SEMICOLON);
         SYMBOL_MAP.put("(", TokenType.LPAR);
         SYMBOL_MAP.put(")", TokenType.RPAR);
-//        SYMBOL_MAP.put("{", TokenType.LFIGBR);
-//        SYMBOL_MAP.put("}", TokenType.RFIGBR);
         SYMBOL_MAP.put("=", TokenType.ASSIGN);
     }
 
